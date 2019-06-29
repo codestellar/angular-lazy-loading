@@ -1,0 +1,15 @@
+<p>
+  parent works!
+  <app-child [messageForChild]="message" (onMessageSend)="receiveMessage($event)"></app-child>
+</p>
+<hr/>
+
+<p>
+  <strong>Parent input</strong>
+  <input type="text" [(ngModel)]="message" />
+  </p>
+
+<p>
+<strong>Parent output</strong>
+{{messageFromChild}}
+</p>
